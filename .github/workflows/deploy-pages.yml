@@ -50,7 +50,7 @@ jobs:
           git checkout -B pages
 
           # 添加远程仓库并推送到 pages 分支
-          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ env.REPO_URL }}.git
+          git remote add origin https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ env.REPO_URL }}.git
           git push --force origin pages
 
         env:
