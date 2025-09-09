@@ -13,6 +13,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # 添加权限设置
+    permissions:
+      contents: write
     env:
       REPO_URL: "snowy2002/snowy2002.github.io"  # 远程仓库的 URL
       BUILD_PATH: ".vitepress/dist"  # 构建输出路径
@@ -50,7 +53,7 @@ jobs:
           git checkout -B pages
 
           # 添加远程仓库并推送到 pages 分支
-          git remote add origin https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ env.REPO_URL }}.git
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ env.REPO_URL }}.git
           git push --force origin pages
 
         env:
