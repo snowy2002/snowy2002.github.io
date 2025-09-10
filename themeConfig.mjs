@@ -156,19 +156,9 @@ export const themeConfig = {
           url: "https://snowy2002.github.io/",
         },
         {
-          icon: "/images/logo/my_blog.jpg",
-          name: "博客演示站",
-          url: "/",
-        },
-        {
-          icon: "https://t.alcy.cc/mp?random=1",
-          name: "个人主页",
-          url: "https://snowy2002.github.io/",
-        },
-        {
-          icon: "https://t.alcy.cc/mp?random=2",
-          name: "私有工具",
-          url: "https://blog.811520.xyz/tlink/",
+          icon: "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png",
+          name: "博客仓库",
+          url: "https://github.com/snowy2002/snowy2002.github.io",
         },
       ],
     },
@@ -196,15 +186,10 @@ export const themeConfig = {
           url: "https://ctool.dev/",
         },
         {
-          icon: "https://tc.alcy.cc/q/20250908/1fd7089c4b6e8bddb7d773815ad4f72a.webp",
+          icon: "https://t.alcy.cc/mp?random=8",
           name: "图片压缩",
           url: "https://imgtool.v1.mk/",
-        },
-        {
-          icon: "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png",
-          name: "博客仓库",
-          url: "https://github.com/snowy2002/snowy2002.github.io",
-        },
+        }
       ],
     },
     {
@@ -216,20 +201,15 @@ export const themeConfig = {
           url: "https://hot.imsyy.top/",
         },
         {
-          icon: "https://tc.alcy.cc/q/20250908/e70d91f2b51dadcb0f2481ef319c80d7.webp",
-          name: "友圈后端",
-          url: "https://rss.811520.xyz/",
+          icon: "/images/logo/shuiyuan.png",
+          name: "水源社区",
+          url: "https://shuiyuan.sjtu.edu.cn/",
         },
         {
-          icon: "https://tc.alcy.cc/q/20250908/506e695da0bf1908fc5ab25847b1f54b.webp",
-          name: "CF优选",
-          url: "https://blog2.811520.xyz/blogrss/",
-        },
-        {
-          icon: "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png",
-          name: "Serv00",
-          url: "https://github.com/yutian81/serv00-ct8-ssh",
-        },
+          icon: "https://my.sjtu.edu.cn/img/logo.svg",
+          name: "交我办",
+          url: "https://my.sjtu.edu.cn/ui/task/",
+        }
       ],
     },
   ],
