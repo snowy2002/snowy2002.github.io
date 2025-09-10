@@ -156,17 +156,17 @@ export const themeConfig = {
           url: "https://snowy2002.github.io/",
         },
         {
-          icon: "/images/logo/logo.webp",
+          icon: "/images/logo/my_blog.jpg",
           name: "博客演示站",
           url: "/",
         },
         {
-          icon: "/images/logo/logo.webp",
+          icon: "https://sex.nyan.run/api/v2/img?random=10",
           name: "个人主页",
-          url: "https://daoyi.hidns.vip/#/",
+          url: "https://snowy2002.github.io/",
         },
         {
-          icon: "/images/logo/logo.webp",
+          icon: "https://sex.nyan.run/api/v2/img?random=11",
           name: "私有工具",
           url: "https://blog.811520.xyz/tlink/",
         },
@@ -176,34 +176,34 @@ export const themeConfig = {
       name: "常用",
       list: [
         {
-          icon: "https://cover.ruom.top/favicon.ico",
+          icon: "https://sex.nyan.run/api/v2/img?random=1",
           name: "封面制作",
           url: "https://cover.ruom.top/",
         },
         {
-          icon: "https://sex.nyan.run/api/v2/img",
+          icon: "https://sex.nyan.run/api/v2/img?random=2",
           name: "图床博客",
           url: "https://blog.jixiaob.cn/?post=93",
         },
         {
-          icon: "https://pan.811520.xyz/2024-10/插入链接.webp",
+          icon: "https://sex.nyan.run/api/v2/img?random=3",
           name: "短链生成",
           url: "https://slink.yuzong.nyc.mn/duanlian",
         },
         {
-          icon: "https://ctool.dev/favicon.ico",
+          icon: "https://sex.nyan.run/api/v2/img?random=4",
           name: "开发工具",
           url: "https://ctool.dev/",
         },
         {
-          icon: "https://suburl.v1.mk/favicon.ico",
+          icon: "https://sex.nyan.run/api/v2/img?random=5",
           name: "图片压缩",
           url: "https://imgtool.v1.mk/",
         },
         {
           icon: "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png",
           name: "博客仓库",
-          url: "https://github.com/yutian81/yutian81.github.io",
+          url: "https://github.com/snowy2002/snowy2002.github.io",
         },
       ],
     },
