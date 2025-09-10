@@ -189,7 +189,7 @@ export const themeConfig = {
         {
           icon: "https://pan.811520.xyz/2024-10/插入链接.webp",
           name: "短链生成",
-          url: "https://slink.yuzong.nyc.mn/duanlian",  
+          url: "https://slink.yuzong.nyc.mn/duanlian",
         },
         {
           icon: "https://ctool.dev/favicon.ico",
@@ -264,12 +264,12 @@ export const themeConfig = {
         link: "https://github.com/snowy2002/",
       },
       {
-        icon: "telegram",
-        link: "", // To do 后续补充
+        icon: "/images/logo/leetcode.png",
+        link: "https://leetcode.cn/u/snowy-sjtu/",
       },
       {
-        icon: "bilibili",
-        link: "", // To do 后续补充
+        icon: "/images/logo/codeforces.png",
+        link: "https://codeforces.com/profile/snowy2002",
       },
     ],
     // sitemap
@@ -359,7 +359,7 @@ export const themeConfig = {
     // 站点简介
     hello: {
       enable: true,
-      text: "这里有我的各种<strong>折腾笔记</strong>，也有一些<strong>工作备忘</strong>和<strong>生活随笔</strong>。又菜又爱玩，<strong>万事都不难</strong>。",
+      text: "这里有我的各种<strong>折腾笔记</strong>，也有一些<strong>工作备忘</strong>和<strong>生活随笔</strong>。",
     },
     // 目录
     toc: {
