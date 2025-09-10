@@ -14,7 +14,13 @@
         target="_blank"
         class="social-link"
       >
-        <i :class="`iconfont icon-${item.icon}`"></i>
+        <!-- 判断是图片路径还是图标名称 -->
+        <template v-if="isImagePath(item.icon)">
+          <img :src="item.icon" :alt="'social-icon-' + index" class="icon-image" />
+        </template>
+        <template v-else>
+          <i :class="`iconfont icon-${item.icon}`"></i>
+        </template>
       </a>
       <div class="logo" title="返回顶部" @click="smoothScrolling">
         <img :src="siteMeta.author.cover" alt="author" class="author" />
@@ -26,7 +32,13 @@
         target="_blank"
         class="social-link"
       >
-        <i :class="`iconfont icon-${item.icon}`"></i>
+        <!-- 判断是图片路径还是图标名称 -->
+        <template v-if="isImagePath(item.icon)">
+          <img :src="item.icon" :alt="'social-icon-' + index" class="icon-image" />
+        </template>
+        <template v-else>
+          <i :class="`iconfont icon-${item.icon}`"></i>
+        </template>
       </a>
     </div>
     <div class="footer-sitemap">
@@ -68,6 +80,15 @@ const socialLinkData = computed(() => {
   const secondHalf = footer.social.slice(halfLength);
   return { first: firstHalf, second: secondHalf };
 });
+
+// 判断是否为图片路径
+const isImagePath = (path) => {
+  if (!path) return false;
+  // 检查是否是以 / 或 http 开头，或者包含图片扩展名
+  return path.startsWith('/') || 
+         path.startsWith('http') || 
+         /\.(jpg|jpeg|png|gif|webp|svg|ico)$/i.test(path);
+};
 </script>
 
 <style lang="scss" scoped>
@@ -144,6 +165,11 @@ const socialLinkData = computed(() => {
         font-size: 20px;
         color: var(--main-card-background);
       }
+      .icon-image {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+      }
       &:hover {
         transform: scale(1.15);
         background-color: var(--main-color);
@@ -184,15 +210,14 @@ const socialLinkData = computed(() => {
     margin: 1rem 0;
     .sitemap-item {
       display: flex;
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
       min-width: 120px;
       .title {
         display: inline-block;
         margin: 1rem 0;
         font-size: 16px;
         font-weight: bold;
-        // margin-left: 8px;
         color: var(--main-font-second-color);
         &.friends {
           display: flex;
