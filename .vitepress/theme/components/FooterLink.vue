@@ -202,9 +202,12 @@ const isImagePath = (path) => {
       margin: 0 1rem;
       transition: transform 0.3s;
       cursor: pointer;
+      border-radius: 50%; // 添加圆形边框
+      overflow: hidden;   // 确保内容不超出圆形边界
       img {
         width: 100%;
         height: 100%;
+        object-fit: cover; // 确保图片填满容器并保持比例
       }
       &:hover {
         transform: scale(1.2);
@@ -212,6 +215,8 @@ const isImagePath = (path) => {
       &:active {
         transform: scale(1);
       }
+      border: 2px solid var(--main-color); // 添加主题色边框
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // 添加轻微阴影
     }
     @media (max-width: 768px) {
       .logo {
