@@ -7,7 +7,7 @@ export const themeConfig = {
     // 站点描述
     description: "基于 vitepress-theme-curve 搭建的 github pages 站点",
     // 站点logo
-    logo: "/images/logo/logo.webp",
+    logo: "/images/logo/my_blog.jpg",
     // 站点地址
     site: "https://snowy2002.github.io",
     // 语言
@@ -15,7 +15,7 @@ export const themeConfig = {
     // 作者
     author: {
       name: "snowy2002",
-      cover: "/images/logo/logo.webp",
+      cover: "/images/logo/my_blog.jpg",
       email: "snowy2002@sjtu.edu.cn",
       link: "https://snowy2002.github.io",
     },
@@ -152,7 +152,7 @@ export const themeConfig = {
       name: "博客",
       list: [
         {
-          icon: "/images/logo/logo.webp",
+          icon: "/images/logo/my_blog.jpg",
           name: "博客主站",
           url: "https://snowy2002.github.io/",
         },
@@ -257,19 +257,19 @@ export const themeConfig = {
     social: [
       {
         icon: "email",
-        link: "mailto:admin@24811213.xyz",
+        link: "snowy2002@sjtu.edu.cn",
       },
       {
         icon: "github",
-        link: "https://github.com/yutian81/",
+        link: "https://github.com/snowy2002/",
       },
       {
         icon: "telegram",
-        link: "https://t.me/yutian88881",
+        link: "", // To do 后续补充
       },
       {
         icon: "bilibili",
-        link: "https://space.bilibili.com/677845115",
+        link: "", // To do 后续补充
       },
     ],
     // sitemap
@@ -326,7 +326,7 @@ export const themeConfig = {
           { text: "音乐时刻", link: "https://blog.811520.xyz/music/", newTab: true },
           { text: "站点状态", link: "https://uptime.ytian.us.kg/status/service", newTab: true },
           { text: "站点订阅", link: "https://blog2.811520.xyz/rss.xml", newTab: true },
-          { text: "问题反馈", link: "https://github.com/yutian81/yutian81.github.io/issues", newTab: true, },
+          { text: "问题反馈", link: "https://github.com/snowy2002/snowy2002.github.io/issues", newTab: true, },
         ],
       },
     ],
