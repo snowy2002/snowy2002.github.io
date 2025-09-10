@@ -12,7 +12,7 @@
         :key="index"
         :href="item.link"
         target="_blank"
-        class="social-link"
+        :class="['social-link', { 'image-link': isImagePath(item.icon) }]"
       >
         <!-- 判断是图片路径还是图标名称 -->
         <template v-if="isImagePath(item.icon)">
@@ -30,7 +30,7 @@
         :key="index"
         :href="item.link"
         target="_blank"
-        class="social-link"
+        :class="['social-link', { 'image-link': isImagePath(item.icon) }]"
       >
         <!-- 判断是图片路径还是图标名称 -->
         <template v-if="isImagePath(item.icon)">
@@ -165,17 +165,35 @@ const isImagePath = (path) => {
         font-size: 20px;
         color: var(--main-card-background);
       }
-      .icon-image {
-        width: 20px;
-        height: 20px;
-        object-fit: contain;
-      }
       &:hover {
         transform: scale(1.15);
         background-color: var(--main-color);
       }
       &:active {
         transform: scale(1);
+      }
+      
+      // 图片链接样式
+      &.image-link {
+        background-color: transparent; // 移除背景色
+        width: 36px;
+        height: 36px;
+        
+        .icon-image {
+          width: 36px;
+          height: 36px;
+          object-fit: contain;
+          border-radius: 50%; // 保持圆形
+          transition: transform 0.3s;
+        }
+        
+        &:hover {
+          background-color: transparent; // 悬停时也不显示背景色
+          
+          .icon-image {
+            transform: scale(1.15); // 只缩放图片
+          }
+        }
       }
     }
     .logo {
