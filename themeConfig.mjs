@@ -246,8 +246,10 @@ export const themeConfig = {
       coverLayout: 'left',
       // 默认封面(随机展示)
       defaultCover: [
-        'https://pan.811520.xyz/2024-10/1728279557702.webp',
-        'https://pan.811520.xyz/2024-10/1728387512098.webp'
+        'https://t.alcy.cc/pc?random=' + Date.now(),
+        // 'https://t.alcy.cc/pc',
+        // 'https://pan.811520.xyz/2024-10/1728279557702.webp',
+        // 'https://pan.811520.xyz/2024-10/1728387512098.webp'，
       ]
     }
   },
