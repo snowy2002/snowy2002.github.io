@@ -60,7 +60,7 @@ export const getAllPosts = async () => {
           const { birthtimeMs, mtimeMs } = stat;
           // 解析 front matter
           const { data } = matter(content);
-          const { title, date, categories, description, tags, top, cover } = data;
+          const { title, date, categories, description, tags, top, cover, delete: isDelete } = data;
           // 计算文章的过期天数
           const expired = Math.floor(
             (new Date().getTime() - new Date(date).getTime()) / (1000 * 60 * 60 * 24),
@@ -78,6 +78,7 @@ export const getAllPosts = async () => {
             regularPath: `/${item.replace(".md", ".html")}`,
             top,
             cover,
+            delete: isDelete,
           };
         } catch (error) {
           console.error(`处理文章文件 '${item}' 时出错:`, error);
@@ -87,6 +88,8 @@ export const getAllPosts = async () => {
     );
     // 根据日期排序文章
     posts.sort(comparePostPriority);
+    // 过滤掉标记为删除的文章
+    posts = posts.filter(post => post.delete !== true);
     return posts;
   } catch (error) {
     console.error("获取所有文章时出错:", error);
