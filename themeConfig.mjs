@@ -161,12 +161,12 @@ export const themeConfig = {
           url: "/",
         },
         {
-          icon: "https://sex.nyan.run/api/v2/img?random=10",
+          icon: "https://t.alcy.cc/mp?random=1",
           name: "个人主页",
           url: "https://snowy2002.github.io/",
         },
         {
-          icon: "https://sex.nyan.run/api/v2/img?random=11",
+          icon: "https://t.alcy.cc/mp?random=2",
           name: "私有工具",
           url: "https://blog.811520.xyz/tlink/",
         },
@@ -176,27 +176,27 @@ export const themeConfig = {
       name: "常用",
       list: [
         {
-          icon: "https://sex.nyan.run/api/v2/img?random=1",
+          icon: "https://tc.alcy.cc/q/20250908/c0013a85d9df7f68d37bd16108eef934.webp",
           name: "封面制作",
           url: "https://cover.ruom.top/",
         },
         {
-          icon: "https://sex.nyan.run/api/v2/img?random=2",
+          icon: "https://tc.alcy.cc/q/20250908/749990a598727b25bf7e42f7a0dd8b52.webp",
           name: "图床博客",
           url: "https://blog.jixiaob.cn/?post=93",
         },
         {
-          icon: "https://sex.nyan.run/api/v2/img?random=3",
+          icon: "https://tc.alcy.cc/q/20250908/a8174a16e6918fdbdede41ccb7ab0e95.webp",
           name: "短链生成",
           url: "https://slink.yuzong.nyc.mn/duanlian",
         },
         {
-          icon: "https://sex.nyan.run/api/v2/img?random=4",
+          icon: "https://tc.alcy.cc/q/20250908/0dc5029a767ab8a1eba609e6354f7506.webp",
           name: "开发工具",
           url: "https://ctool.dev/",
         },
         {
-          icon: "https://sex.nyan.run/api/v2/img?random=5",
+          icon: "https://tc.alcy.cc/q/20250908/1fd7089c4b6e8bddb7d773815ad4f72a.webp",
           name: "图片压缩",
           url: "https://imgtool.v1.mk/",
         },
@@ -216,12 +216,12 @@ export const themeConfig = {
           url: "https://hot.imsyy.top/",
         },
         {
-          icon: "https://rss.811520.xyz/favicon.ico",
+          icon: "https://tc.alcy.cc/q/20250908/e70d91f2b51dadcb0f2481ef319c80d7.webp",
           name: "友圈后端",
           url: "https://rss.811520.xyz/",
         },
         {
-          icon: "https://pan.811520.xyz/2024-11/1730634973-Cloudflare_Logo.webp",
+          icon: "https://tc.alcy.cc/q/20250908/506e695da0bf1908fc5ab25847b1f54b.webp",
           name: "CF优选",
           url: "https://blog2.811520.xyz/blogrss/",
         },
