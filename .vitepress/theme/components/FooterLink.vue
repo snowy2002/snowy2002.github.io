@@ -176,12 +176,12 @@ const isImagePath = (path) => {
       // 图片链接样式
       &.image-link {
         background-color: transparent; // 移除背景色
-        width: 36px;
-        height: 36px;
+        width: 30px;
+        height: 30px;
         
         .icon-image {
-          width: 36px;
-          height: 36px;
+          width: 30px;
+          height: 30px;
           object-fit: contain;
           border-radius: 50%; // 保持圆形
           transition: transform 0.3s;
