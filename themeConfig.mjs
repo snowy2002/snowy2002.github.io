@@ -457,13 +457,11 @@ export const themeConfig = {
     indexName: "daoyi-wiki",
   },
   // 打赏
-  // rewardData: {
-  //   enable: true,
-  //   // 微信二维码
-  //   wechat: "https://pan.811520.xyz/2024-11/1730603920-wechatpay.webp",
-  //   // 支付宝二维码
-  //   alipay: "https://pan.811520.xyz/2024-11/1730603921-alipay.webp",
-  // },
+  rewardData: {
+    enable: false,
+    wechat: "",
+    alipay: "",
+  },
   // 图片灯箱
   fancybox: {
     enable: true,
