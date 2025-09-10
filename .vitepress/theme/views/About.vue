@@ -5,8 +5,8 @@
       <!-- 介绍 -->
       <div class="about-item hello">
         <span class="text1">你好，很高兴认识你👋</span>
-        <span class="text2 title2">我是 九天之上</span>  
-        <span class="text3">是一名 又菜又爱玩的小白</span>
+        <span class="text2 title2">我是 snowy2002</span>  
+        <span class="text3">是一名菜菜的ACMer, 喜欢打打游戏，写写代码, 偶尔也会运动, 本科在neu打ACM, 现在在sjtu读研</span>
       </div>
       <!-- 追求 -->
       <div class="about-item pursuit">
@@ -142,9 +142,9 @@
       <div class="about-item child">
         <div
           class="about-item map image"
-          style="background-image: url(https://pan.811520.xyz/2024-10/1730361853-1730361845894.webp)"
+          style="background-image: url(/images/logo/position.jpg)"
         >
-          <span class="position">我现在住在 <strong>中国，武汉</strong></span>
+          <span class="position">我现在住在 <strong>中国，上海</strong></span>
         </div>
         <div class="about-item info">
           <div class="info-item">
