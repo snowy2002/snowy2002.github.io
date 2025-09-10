@@ -206,7 +206,7 @@ export const themeConfig = {
           url: "https://shuiyuan.sjtu.edu.cn/",
         },
         {
-          icon: "https://my.sjtu.edu.cn/img/logo.svg",
+          icon: "/images/logo/jiaowoban.png",
           name: "交我办",
           url: "https://my.sjtu.edu.cn/ui/task/",
         }
