@@ -181,9 +181,9 @@ export const themeConfig = {
           url: "https://cover.ruom.top/",
         },
         {
-          icon: "https://www.favicon.vip/get.php?url=img.ytian.us.kg",
-          name: "兰空图床",
-          url: "https://img.811520.xyz/",
+          icon: "https://sex.nyan.run/api/v2/img",
+          name: "图床博客",
+          url: "https://blog.jixiaob.cn/?post=93",
         },
         {
           icon: "https://pan.811520.xyz/2024-10/插入链接.webp",
