@@ -257,7 +257,7 @@ export const themeConfig = {
     social: [
       {
         icon: "email",
-        link: "snowy2002@sjtu.edu.cn",
+        link: "mailto:snowy2002@sjtu.edu.cn",
       },
       {
         icon: "github",
