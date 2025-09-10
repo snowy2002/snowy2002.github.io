@@ -26,9 +26,9 @@ workflows/*
 !deploy-pages.yml
 !merge.yml
 
-posts/*
-!posts/2024-10/1010.md
-!posts/2024-11/110301.md
+# posts/*
+posts/2024-10/*
+posts/2024-11/*
 
 # Editor directories and files
 .vscode/*
