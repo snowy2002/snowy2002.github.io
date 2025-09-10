@@ -1,6 +1,6 @@
 <template>
   <div v-if="type === 'text'" :class="['banner', bannerType]" id="main-banner">
-    <h1 class="title">你好，欢迎来到{{ theme.siteMeta.title }}</h1>
+    <h1 class="title">你好，欢迎来到{{ theme.siteMeta.title }}的博客</h1>
     <div class="subtitle">
       <Transition name="fade" mode="out-in">
         <span :key="hitokotoData?.hitokoto" class="text">

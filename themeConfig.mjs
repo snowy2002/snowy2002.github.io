@@ -3,25 +3,25 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "九天之上",
+    title: "snowy2002",
     // 站点描述
     description: "基于 vitepress-theme-curve 搭建的 github pages 站点",
     // 站点logo
     logo: "/images/logo/logo.webp",
     // 站点地址
-    site: "https://blog2.811520.xyz",
+    site: "https://snowy2002.github.io",
     // 语言
     lang: "zh-CN",
     // 作者
     author: {
-      name: "雨天狂奔",
+      name: "snowy2002",
       cover: "/images/logo/logo.webp",
-      email: "admin@24811213.xyz",
-      link: "https://daoyi.hidns.vip/#/",
+      email: "snowy2002@sjtu.edu.cn",
+      link: "https://snowy2002.github.io",
     },
   },
   // 备案信息
-  icp: "鄂ICP备202411-001号",
+  // icp: "鄂ICP备202411-001号",
   // 建站日期
   since: "2024-11-1",
   // 每页文章数据
@@ -154,7 +154,7 @@ export const themeConfig = {
         {
           icon: "/images/logo/logo.webp",
           name: "博客主站",
-          url: "https://blog.811520.xyz/",
+          url: "https://snowy2002.github.io/",
         },
         {
           icon: "/images/logo/logo.webp",
@@ -416,13 +416,13 @@ export const themeConfig = {
     indexName: "daoyi-wiki",
   },
   // 打赏
-  rewardData: {
-    enable: true,
-    // 微信二维码
-    wechat: "https://pan.811520.xyz/2024-11/1730603920-wechatpay.webp",
-    // 支付宝二维码
-    alipay: "https://pan.811520.xyz/2024-11/1730603921-alipay.webp",
-  },
+  // rewardData: {
+  //   enable: true,
+  //   // 微信二维码
+  //   wechat: "https://pan.811520.xyz/2024-11/1730603920-wechatpay.webp",
+  //   // 支付宝二维码
+  //   alipay: "https://pan.811520.xyz/2024-11/1730603921-alipay.webp",
+  // },
   // 图片灯箱
   fancybox: {
     enable: true,
@@ -436,7 +436,7 @@ export const themeConfig = {
     exclude: [
       "cf-friends-link",
       "upyun",
-      "icp",
+      // "icp",
       "author",
       "rss",
       "cc",
