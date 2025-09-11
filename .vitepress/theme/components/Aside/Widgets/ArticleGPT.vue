@@ -10,7 +10,12 @@
       <span :class="['logo', { loading }]" @click="showOther"> FakeGPT </span>
     </div>
     <div class="content s-card">
-      <span class="text">{{ abstractData === "" ? "加载中..." : abstractData }}</span>
+      <div v-if="isList && !loading" class="list-content">
+        <div v-for="(item, index) in processedData" :key="index" class="list-item">
+          {{ item }}
+        </div>
+      </div>
+      <span v-else class="text">{{ abstractData === "" ? "加载中..." : abstractData }}</span>
       <span v-if="loading" class="point">|</span>
     </div>
     <div class="meta">
@@ -36,10 +41,40 @@ const waitTimeOut = ref(null);
 const abstractData = ref("");
 const showIndex = ref(0);
 const showType = ref(false);
+const isList = ref(false);
+const processedData = ref([]);
+
+// 检查是否为列表格式
+const checkIfList = () => {
+  const data = frontmatter.value.articleGPT;
+  if (Array.isArray(data)) {
+    isList.value = true;
+    processedData.value = data;
+    return true;
+  } else if (typeof data === 'object' && data !== null) {
+    // 处理对象格式的列表（如YAML中的序号列表）
+    isList.value = true;
+    const items = [];
+    for (const key in data) {
+      if (data.hasOwnProperty(key)) {
+        items.push(data[key]);
+      }
+    }
+    processedData.value = items;
+    return true;
+  }
+  return false;
+};
 
 // 输出摘要
 const typeWriter = (text = null) => {
   try {
+    // 先检查是否为列表格式
+    if (checkIfList()) {
+      loading.value = false;
+      return;
+    }
+    
     const data = text || frontmatter.value.articleGPT;
     if (!data) return false;
     if (showIndex.value < data.length) {
@@ -55,7 +90,6 @@ const typeWriter = (text = null) => {
   } catch (error) {
     loading.value = false;
     abstractData.value = "摘要生成失败";
-    $message.error("摘要生成失败，请重试");
     console.error("摘要生成失败：", error);
   }
 };
@@ -73,6 +107,18 @@ const initAbstract = () => {
 // 输出摘要介绍
 const showOther = () => {
   if (loading.value) return false;
+  
+  // 如果是列表格式，切换回普通文本
+  if (isList.value) {
+    isList.value = false;
+    const text = processedData.value.join('。 ');
+    showIndex.value = 0;
+    loading.value = true;
+    abstractData.value = "";
+    typeWriter(text);
+    return;
+  }
+  
   const text =
     "我是無名开发的摘要生成助理 FakeGPT，如你所见，这是一个假的 GPT，所有文本皆源于本地书写的内容。我在这里只负责显示，并仿照 GPT 的形式输出，如果你像我一样囊中羞涩，你也可以像我这样做，当然，你也可以使用 Tianli 开发的 TianliGPT 来更简单地实现真正的 AI 摘要。";
   showIndex.value = 0;
@@ -158,6 +204,26 @@ onBeforeUnmount(() => {
       font-weight: bold;
       margin-left: 4px;
       animation: loading 0.8s infinite;
+    }
+    .list-content {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      .list-item {
+        position: relative;
+        padding-left: 20px;
+        line-height: 1.5;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 6px;
+          top: 8px;
+          width: 6px;
+          height: 6px;
+          background-color: var(--main-color);
+          border-radius: 50%;
+        }
+      }
     }
   }
   .meta {
