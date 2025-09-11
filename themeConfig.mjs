@@ -397,7 +397,7 @@ export const themeConfig = {
       // 倒计时日期
       data: {
         name: "春节",
-        date: "2025-05-01",
+        date: "2026-02-17",
       },
     },
     // 站点数据
