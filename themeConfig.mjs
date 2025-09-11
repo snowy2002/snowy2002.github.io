@@ -370,7 +370,7 @@ export const themeConfig = {
       js: "https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js",
       // js: "https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/twikoo/1.6.39/twikoo.all.min.js",
       // envId: "https://twikoo.24811213.xyz/",
-      envId: "https://teal-salamander-81a2f7.netlify.app",
+      envId: "https://teal-salamander-81a2f7.netlify.app/.netlify/functions/twikoo",
       // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
       region: "",
       lang: "zh-CN",
