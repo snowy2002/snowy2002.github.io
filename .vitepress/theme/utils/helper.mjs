@@ -263,7 +263,7 @@ export const specialDayGray = () => {
   // 查找纪念日
   const specialDay = specialDays.find((day) => day.date === currentDate);
   if (specialDay) {
-    document.documentElement.classList.add("gray");
+    // document.documentElement.classList.add("gray");
     if (typeof $message !== "undefined") {
       $message.info(`今天是${specialDay.name}，特此默哀`, {
         duration: 8000,
