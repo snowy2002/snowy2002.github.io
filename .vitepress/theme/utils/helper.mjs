@@ -67,17 +67,28 @@ export const smoothScrolling = (target = 0) => {
  * @return {string} 返回日期格式的字符串
  */
 export const formatTimestamp = (timestamp) => {
+  console.log("原始时间戳:", timestamp);
   let now = new Date();
+  console.log("当前时间:", now);
   // 获取今天0点
   let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  console.log("今天0点:", today);
   // 获取昨天0点
   let yesterday = new Date(today.getTime() - 1000 * 60 * 60 * 24);
+  console.log("昨天0点:", yesterday);
   let targetDate = new Date(timestamp);
+  console.log("目标日期:", targetDate);
+  
+  // 输出比较结果
+  console.log("targetDate >= yesterday:", targetDate >= yesterday);
+  console.log("targetDate < today:", targetDate < today);
+  
   // 是否为昨天
   if (targetDate >= yesterday && targetDate < today) {
     return "1天前";
   } else {
     let difference = Math.floor((today - targetDate) / (1000 * 60 * 60 * 24));
+    console.log("日期差(天):", difference);
     if (difference <= 0) {
       return "今日内";
     } else if (difference < 7) {
