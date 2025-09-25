@@ -36,7 +36,7 @@
         </span>
         <span class="update meta">
           <i class="iconfont icon-time" />
-          {{ formatTimestamp(page?.lastUpdated || postMetaData.lastModified) }}
+          {{ formatTimestamp(postMetaData.lastModified) }}
         </span>
         <!-- 热度 -->
         <span class="hot meta">

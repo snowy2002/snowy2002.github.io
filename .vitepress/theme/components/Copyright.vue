@@ -17,7 +17,7 @@
       </div>
       <div class="meta-item">
         <span class="tip">更新于</span>
-        <span class="name">{{ postData?.lastModified }}</span>
+        <span class="name">{{ formatTimestamp(postData?.lastModified) }}</span>
         <!-- <span class="name">{{ formatTimestamp(postData?.lastModified) }}</span> -->
       </div>
       <div class="meta-item cc">
