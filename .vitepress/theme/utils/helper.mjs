@@ -67,12 +67,19 @@ export const smoothScrolling = (target = 0) => {
  * @return {string} 返回日期格式的字符串
  */
 export const formatTimestamp = (timestamp) => {
+  // 如果时间戳不存在，返回空字符串
+  if (!timestamp) return '';
+  
   let now = new Date();
   // 获取今天0点
   let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   // 获取昨天0点
   let yesterday = new Date(today.getTime() - 1000 * 60 * 60 * 24);
-  let targetDate = new Date(timestamp);
+  
+  // 确保时间戳是数字类型
+  const timestampNum = typeof timestamp === 'number' ? timestamp : Number(timestamp);
+  let targetDate = new Date(timestampNum);
+  
   // 是否为昨天
   if (targetDate >= yesterday && targetDate < today) {
     return "1天前";
@@ -263,7 +270,7 @@ export const specialDayGray = () => {
   // 查找纪念日
   const specialDay = specialDays.find((day) => day.date === currentDate);
   if (specialDay) {
-    document.documentElement.classList.add("gray");
+    // document.documentElement.classList.add("gray");
     if (typeof $message !== "undefined") {
       $message.info(`今天是${specialDay.name}，特此默哀`, {
         duration: 8000,
