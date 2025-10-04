@@ -419,11 +419,11 @@ export const themeConfig = {
   // 音乐播放器
   // https://github.com/imsyy/Meting-API
   music: {
-    enable: false,
+    enable: true,
     // url
     url: "https://meting-api-ten.vercel.app",
     // id
-    id: 8152976493,
+    id: 12700930157,
     // netease / tencent / kugou
     server: "netease",
     // playlist / album / song
