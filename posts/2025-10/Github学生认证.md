@@ -2,7 +2,7 @@
 title: GitHub学生认证攻略 - 两次必过指南
 filename: 2025100401-Github学生认证
 tags:
-  - gitHub
+  - github
 categories:  
   - 技术分享  
 date: 2025-10-04
