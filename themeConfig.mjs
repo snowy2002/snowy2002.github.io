@@ -421,7 +421,7 @@ export const themeConfig = {
   music: {
     enable: true,
     // url
-    url: "https://meting-api-ten.vercel.app",
+    url: "https://api.injahow.cn/meting/",
     // id
     id: 12700930157,
     // netease / tencent / kugou
