@@ -7,7 +7,7 @@ export const themeConfig = {
     // 站点描述
     description: "基于 vitepress-theme-curve 搭建的 github pages 站点",
     // 站点logo
-    logo: "/images/logo/my_blog.jpg",
+    logo: "/images/logo/blog.png",
     // 站点地址
     site: "https://snowy2002.github.io",
     // 语言
@@ -15,7 +15,7 @@ export const themeConfig = {
     // 作者
     author: {
       name: "snowy2002",
-      cover: "/images/logo/my_blog.jpg",
+      cover: "/images/logo/blog.png",
       email: "snowy2002@sjtu.edu.cn",
       link: "https://snowy2002.github.io",
     },
@@ -32,7 +32,7 @@ export const themeConfig = {
     // https://vitepress.dev/zh/reference/site-config#head
     header: [
       // favicon
-      ["link", { rel: "icon", href: "/images/logo/my_blog.jpg" }],
+      ["link", { rel: "icon", href: "/images/logo/blog.png" }],
       // RSS
       [
         "link",
