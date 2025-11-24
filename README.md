@@ -64,6 +64,21 @@ pnpm build
 
 通常在未修改配置文件的情况下，打包后的文件会处于根目录下的 `.vitepress\dist` 目录中，您可以将其中的文件上传至任意服务器以访问。
 
+### 本地构建与预览（验证上线前效果）
+
+```bash
+# 安装依赖（仅首次或依赖变更时）
+pnpm install
+
+# 生产构建
+pnpm build
+
+# 预览构建产物，默认端口 4173，可用 --port 自定义
+pnpm preview --host --port 4173
+```
+
+打开浏览器访问 http://localhost:4173/ ，逐页检查样式、图片、动态交互是否正常。`pnpm dev` 提供热更新开发体验，但最终上线前以 `pnpm preview`（基于 `.vitepress/dist`）的结果为准。
+
 ## 更多
 
 更多信息请参考：[主题文档](https://blog.imsyy.top/pages/categories/%E4%B8%BB%E9%A2%98%E6%96%87%E6%A1%A3)
