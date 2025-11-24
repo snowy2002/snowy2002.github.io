@@ -19,8 +19,7 @@ test.html
 .vitepress/cache
 .vitepress/components.d.ts
 .vitepress/auto-imports.d.ts
-themeConfig.mjs
-!.vitepress/theme/assets/themeConfig.mjs
+.vitepress/theme/assets/themeConfig.mjs
 
 workflows/*
 !deploy-pages.yml
