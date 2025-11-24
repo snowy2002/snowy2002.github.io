@@ -151,7 +151,7 @@ export const themeConfig = {
       name: "博客",
       list: [
         {
-          icon: "/images/logo/my_blog.jpg",
+          icon: "/images/logo/blog.png",
           name: "博客主站",
           url: "https://snowy2002.github.io/",
         },
