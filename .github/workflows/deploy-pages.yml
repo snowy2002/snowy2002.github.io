@@ -22,17 +22,23 @@ jobs:
       CUSTOM_DOMAIN: "snowy2002.github.io"  # 自定义域名
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 固定 pnpm 大版本：pnpm 10+ 默认不再执行依赖的 postinstall，
+      # esbuild 会因此缺少原生二进制，构建报 ERR_PNPM_IGNORED_BUILDS 而失败。
+      # 锁文件为 lockfileVersion 9，故固定 pnpm 9。
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'pnpm'
 
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      # 安装 pnpm、安装依赖并构建项目
-      - name: Install pnpm
-        run: npm install -g pnpm
       - name: Install dependencies and build
         run: |
           pnpm install
